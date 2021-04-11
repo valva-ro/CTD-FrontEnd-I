@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300');
+:root {
+    --blue: #00669F;
+    --green: #1CD1B0;
+    --red: #CC2424;
+    --dark-white: #F3F3F3;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--blue);
+    box-shadow: 0 10px 7px rgba(0, 0, 0, 0.25);
+    color: var(--white);
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 10px;
+    padding-top: 90px;
+}
+
+img {
+    border-radius: 100%;
+    height: 175px;
+    left: 25%;
+    position: absolute;
+    top: 162.5px;
+    left: 120px;
+    width: 175px;
+    z-index: 1;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 70px;
+    padding: 15px;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 21px;
+    width: 100%;
+}
+
+.button {
+    background-color: var(--blue);
+    border-radius: 7px;
+    color: var(--dark-white);
+    left: 25%;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    left: 120px;
+    bottom: 20px;
+}
+
+.card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    width: 400px;
+    min-height: 650px;  
+    position: relative; 
+}
+
+.card-batman {
+    background-image: url(../img/bg-batman.jpg);
+    background-position-x: -230px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 180%;
+    border-radius: 25px 25px 0 0;
+    height: 250px;
+}
+
+.card-wonder-woman {
+    background-image: url(../img/bg-wonderw.jpg);
+    background-position-x: -100px;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    background-size: 180%;
+    border-radius: 25px 25px 0 0;
+    height: 250px;
+}
+
+.card-superman {
+    background-image: url(../img/bg-superman.jpg);
+    background-position-x: -100px;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    background-size: 190%;
+    border-radius: 25px 25px 0 0;
+    height: 250px;
+}
+
+.discount {
+    background-color: var(--green);
+    font-size: 24px;
+    padding: 1px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.fa-heart {
+    color: var(--red);
+    font-size: 35px;
+    left: 6%;
+    position: absolute;
+    top: 3%;
+}
+
+.fa-plus {
+    background-color: var(--blue);
+    border-radius: 100%;
+    bottom: 25%;
+    color: var(--white);
+    font-size: 18px;
+    padding: 14px;
+    position: fixed;
+    right: 1%;
+}
+
+.info-card {
+    margin: 15px 0;
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+.text-card {
+    background-color: var(--dark-white);
+    font-size: 20.5px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
