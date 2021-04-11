@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Card Super Heros</title>
-    <!-- Icono de la pestaña -->
     <link rel="icon" href="img/icon.png" />
-    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <!-- Mis estilo -->
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -63,7 +61,18 @@
                 </div>
             </div>
         </section>
-        <i class="fas fa-plus"></i>
+
+        <section>
+            <a href="#window-notice" onclick="setVisible('window-notice')"><i class="fas fa-plus"></i></a>
+            <div class="window-notice" id="window-notice">
+                <div class="content">
+                <!-- TODO: remove placeholder -->
+                    <h2>Ooops!</h2>
+                    <p>Trabajo en proceso...</p>
+                    <a href="#" class="button" onclick="setHidden('window-notice')">Aceptar</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

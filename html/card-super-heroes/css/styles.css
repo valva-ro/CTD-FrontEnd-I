@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300');
 :root {
     --blue: #00669F;
+    --light-blue: #3b7da3;
     --green: #1CD1B0;
     --red: #CC2424;
     --dark-white: #F3F3F3;
@@ -66,17 +67,31 @@ footer p {
     width: 100%;
 }
 
+/********** Top of nav ***********/
+.discount {
+    background-color: var(--green);
+    font-size: 24px;
+    padding: 1px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+/************ Cards *************/
 .button {
     background-color: var(--blue);
     border-radius: 7px;
+    bottom: 20px;
     color: var(--dark-white);
+    left: 120px;
     left: 25%;
     padding: 15px 50px;
+    position: absolute;
     text-align: center;
     text-decoration: none;
-    position: absolute;
-    left: 120px;
-    bottom: 20px;
+}
+
+.button:hover {
+    background-color: var(--light-blue);
 }
 
 .card {
@@ -117,14 +132,21 @@ footer p {
     height: 250px;
 }
 
-.discount {
-    background-color: var(--green);
-    font-size: 24px;
-    padding: 1px;
-    margin: 0;
-    padding-left: 30px;
+.info-card {
+    margin: 15px 0;
+    padding: 10px 30px;
+    text-align: justify;
 }
 
+.text-card {
+    background-color: var(--dark-white);
+    font-size: 20.5px;
+    height: 430px;
+    position: relative;
+    text-align: center;
+}
+
+/************ Icons *************/
 .fa-heart {
     color: var(--red);
     font-size: 35px;
@@ -138,22 +160,47 @@ footer p {
     border-radius: 100%;
     bottom: 25%;
     color: var(--white);
-    font-size: 18px;
+    font-size: 22px;
     padding: 14px;
     position: fixed;
     right: 1%;
 }
 
-.info-card {
-    margin: 15px 0;
-    padding: 10px 30px;
-    text-align: justify;
+.fa-plus:hover {
+    background-color: var(--light-blue);
 }
 
-.text-card {
-    background-color: var(--dark-white);
-    font-size: 20.5px;
-    height: 430px;
-    position: relative;
+/******** Pop-up window *********/
+.window-notice {
+    visibility: hidden;
+    background-color: rgba(0,0,0,.8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.content {
+    background: #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
     text-align: center;
+    margin: 20% auto;
+    position: relative;
+}
+
+.content p {
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    padding: 5px;
+}
+
+.content .button {
+    position: static;
 }
