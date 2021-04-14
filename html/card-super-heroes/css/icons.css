@@ -1,5 +1,5 @@
 .fa-heart {
-    color: var(--red);
+    color: var(--heart-color);
     font-size: 35px;
     left: 6%;
     position: absolute;
@@ -7,10 +7,10 @@
 }
 
 .fa-plus {
-    background-color: var(--blue);
+    background-color: var(--primary-color);
     border-radius: 100%;
     bottom: 25%;
-    color: var(--white);
+    color: var(--background-color);
     font-size: 30px;
     padding: 14px;
     position: fixed;

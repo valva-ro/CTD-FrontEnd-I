@@ -7,34 +7,31 @@
     width: 400px;
 }
 
+.card-top {
+    background-repeat: no-repeat;
+    border-radius: 25px 25px 0 0;
+    height: 250px;
+}
+
 .card-batman {
     background-image: url(../img/bg-batman.jpg);
     background-position-x: -230px;
     background-position-y: center;
-    background-repeat: no-repeat;
     background-size: 180%;
-    border-radius: 25px 25px 0 0;
-    height: 250px;
 }
 
 .card-wonder-woman {
     background-image: url(../img/bg-wonderw.jpg);
     background-position-x: -100px;
     background-position-y: -50px;
-    background-repeat: no-repeat;
     background-size: 180%;
-    border-radius: 25px 25px 0 0;
-    height: 250px;
 }
 
 .card-superman {
     background-image: url(../img/bg-superman.jpg);
     background-position-x: -100px;
     background-position-y: -50px;
-    background-repeat: no-repeat;
     background-size: 190%;
-    border-radius: 25px 25px 0 0;
-    height: 250px;
 }
 
 .info-card {
@@ -44,7 +41,7 @@
 }
 
 .text-card {
-    background-color: var(--dark-white);
+    background-color: var(--card-background-color);
     font-size: 20.5px;
     height: 430px;
     position: relative;

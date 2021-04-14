@@ -4,12 +4,12 @@
 @import url('pop-up-window.css');
 
 :root {
-    --blue: #00669F;
-    --light-blue: #3b7da3;
-    --green: #1CD1B0;
-    --red: #CC2424;
-    --dark-white: #F3F3F3;
-    --white: #fff;
+    --primary-color: #00669F;
+    --primary-color-lighter: #3b7da3;
+    --advertise-color: #1CD1B0;
+    --heart-color: #CC2424;
+    --card-background-color: #F3F3F3;
+    --background-color: #fff;
 }
 
 * {
@@ -21,9 +21,9 @@
 }
 
 header {
-    background-color: var(--blue);
+    background-color: var(--primary-color);
     box-shadow: 0 10px 7px rgba(0, 0, 0, 0.25);
-    color: var(--white);
+    color: var(--background-color);
     padding-left: 30px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -58,8 +58,8 @@ section {
 
 footer {
     width: 100%;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--primary-color);
+    color: var(--background-color);
     margin-top: 70px;
     padding: 25px;
 }
@@ -72,7 +72,7 @@ footer p {
 
 /********** Top of header ***********/
 .discount {
-    background-color: var(--green);
+    background-color: var(--advertise-color);
     font-size: 24px;
     padding: 1px;
     margin: 0;

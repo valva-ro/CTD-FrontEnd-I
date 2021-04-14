@@ -1,8 +1,8 @@
 .button {
-    background-color: var(--blue);
+    background-color: var(--primary-color);
     border-radius: 7px;
     bottom: 20px;
-    color: var(--dark-white);
+    color: var(--card-background-color);
     left: 100px;
     margin: 20px;
     padding: 15px 50px;
@@ -12,5 +12,5 @@
 }
 
 .button:hover {
-    background-color: var(--light-blue);
+    background-color: var(--primary-color-lighter);
 }
