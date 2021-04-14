@@ -1,7 +1,7 @@
 :root {
     --primary: #A18EDA;
     --secondary: #d88eb1;
-    --light: #DDA1F0;
+    --light: rgb(224, 195, 233);
     --background: #FACBC2;
     --title-background: var(--primary);
 }
@@ -25,7 +25,11 @@ header {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 dt {
@@ -40,6 +44,7 @@ dd {
     font-size: 20px;
     letter-spacing: 2px;
     padding-bottom: 20px;
+    padding-left: 50px;
 }
 
 a {
@@ -50,9 +55,15 @@ a:hover {
     color: var(--light);
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
 footer {
-    position: absolute;
-    bottom: 0;
     font-size: 18px;
     margin-top: 8px;
     padding: 20px;
@@ -66,6 +77,13 @@ footer {
     background-color: var(--title-background);
     color: white;
     padding: 20px;
+}
+
+.subtitle {
+    background-color: var(--secondary);
+    color: white;
+    padding: 20px 8px;
+    margin: 16px 0;
 }
 
 .flex-container {
@@ -82,6 +100,7 @@ footer {
 
 .row {
     max-width: 1200px;
+    min-width: 900px;
     width: auto;
 }
 
@@ -91,4 +110,8 @@ footer {
 
 .icono {
     width: 35px;
+}
+
+.fa-laptop, .fa-book {
+    margin-right: 20px;
 }
