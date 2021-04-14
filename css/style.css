@@ -103,9 +103,8 @@ footer {
 }
 
 .row {
-    max-width: 1200px;
-    min-width: 900px;
-    width: auto;
+    min-width: 400px;
+    width: 75%;
 }
 
 .flex-item {
