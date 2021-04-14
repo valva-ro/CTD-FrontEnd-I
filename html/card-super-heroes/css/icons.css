@@ -1,0 +1,22 @@
+.fa-heart {
+    color: var(--red);
+    font-size: 35px;
+    left: 6%;
+    position: absolute;
+    top: 3%;
+}
+
+.fa-plus {
+    background-color: var(--blue);
+    border-radius: 100%;
+    bottom: 25%;
+    color: var(--white);
+    font-size: 30px;
+    padding: 14px;
+    position: fixed;
+    right: 1%;
+}
+
+.fa-plus:hover {
+    background-color: var(--light-blue);
+}

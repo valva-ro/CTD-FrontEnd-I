@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <title>Card Super Heros</title>
     <link rel="icon" href="img/icon.png" />
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- My styles -->
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js"></script>
 </head>
@@ -42,7 +47,7 @@
                 <img src="img/ww.jpg" alt="Wonder Woman">
                 <div class="text-card">
                     <h2>Mujer maravilla</h2>
-                    <p class="info-card">El personaje apareció como tal publicado por primera vez en la revista de historietas All Star Comics (de diciembre de 1941)1​ y con su alter-ego en el Sensation Comics</p>
+                    <p class="info-card">El personaje apareció como tal publicado por primera vez en la revista de historietas All Star Comics (de diciembre de 1941)​ y con su alter-ego en el Sensation Comics</p>
                     <a href="https://es.wikipedia.org/wiki/Mujer_Maravilla" target="_blank" class="button">Ver más</a>
                 </div>
             </div>
@@ -65,11 +70,28 @@
         <section>
             <a href="#window-notice" onclick="setVisible('window-notice')"><i class="fas fa-plus"></i></a>
             <div class="window-notice" id="window-notice">
-                <div class="content">
-                <!-- TODO: remove placeholder -->
-                    <h2>Ooops!</h2>
-                    <p>Trabajo en proceso...</p>
-                    <a href="#" class="button" onclick="setHidden('window-notice')">Aceptar</a>
+                <div class="container">
+                    <form action="/registro" method="POST"> 
+                        <div class="content">
+                            <label for="nombre">Nombre de le superhéroe:</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+
+                        <div class="content">
+                            <label for="imagen">Link de la imágen:</label>
+                            <input type="text" name="imagen" id="imagen">
+                        </div>
+
+                        <div class="content">
+                            <label for="descripcion">Descripcion:</label>
+                            <textarea type="descripcion" name="descripcion" id="descripcion"></textarea>
+                        </div>
+
+                        <div class="content">
+                            <input href="#" type="sumbit" class="button input-btn" onclick="setHidden('window-notice')" value="Aceptar">
+                            <input type="reset" class="button input-btn" onclick="setHidden('window-notice')" value="Cancelar">
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
