@@ -5,3 +5,7 @@ function setVisible(id) {
 function setHidden(id) {
     document.getElementById(id).style.visibility = "hidden";
 }
+
+function setCustomValidty(id) {
+    document.getElementById(id).setCustomValidty("Por favor rellene este campo");
+}
