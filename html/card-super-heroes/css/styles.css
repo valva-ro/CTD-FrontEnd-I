@@ -5,6 +5,7 @@
 @import url('header.css');
 @import url('nav-bar.css');
 @import url('forms.css');
+@import url('carousel.css');
 
 :root {
     --primary-color: #00669F;
@@ -22,13 +23,6 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
-}
-
-section {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 footer {

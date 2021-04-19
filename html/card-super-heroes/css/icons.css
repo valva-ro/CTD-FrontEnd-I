@@ -15,8 +15,9 @@
     padding: 14px;
     position: fixed;
     right: 1%;
+    z-index: 999;
 }
 
 .fa-plus:hover {
-    background-color: var(--light-blue);
+    background-color: var(--primary-color-lighter);
 }
