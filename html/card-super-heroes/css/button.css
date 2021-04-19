@@ -1,12 +1,12 @@
 .button {
     background-color: var(--primary-color);
     border-radius: 7px;
-    bottom: 20px;
+    bottom: 18px;
+    right: 4px;
     color: var(--card-background-color);
-    left: 85px;
     font-size: 15px;
-    margin: 20px;
-    padding: 15px 10px;
+    margin: 18px 85px;
+    padding: 15px 36px;
     position: absolute;
     text-align: center;
     text-decoration: none;

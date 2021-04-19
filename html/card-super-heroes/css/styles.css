@@ -2,10 +2,14 @@
 @import url('button.css');
 @import url('icons.css');
 @import url('pop-up-window.css');
+@import url('header.css');
+@import url('nav-bar.css');
+@import url('forms.css');
 
 :root {
     --primary-color: #00669F;
     --primary-color-lighter: #3b7da3;
+    --primary-color-darker: #001D2D;
     --advertise-color: #1CD1B0;
     --heart-color: #CC2424;
     --card-background-color: #F3F3F3;
@@ -18,34 +22,6 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: var(--primary-color);
-    box-shadow: 0 10px 7px rgba(0, 0, 0, 0.25);
-    color: var(--background-color);
-    padding-left: 30px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-h2 {
-    text-transform: uppercase;
-    padding-top: 73px;
-    font-size: 30px;
-}
-
-img {
-    border-radius: 100%;
-    height: 120px;
-    left: 90px;
-    position: absolute;
-    top: 162.5px;
-    width: 120px;
-    z-index: 1;
 }
 
 section {
@@ -67,13 +43,4 @@ footer p {
     font-size: 18px;
     text-align: center;
     width: 100%;
-}
-
-/********** Top of header ***********/
-.discount {
-    background-color: var(--advertise-color);
-    font-size: 24px;
-    padding: 1px;
-    margin: 0;
-    padding-left: 30px;
 }

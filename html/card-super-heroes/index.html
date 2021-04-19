@@ -28,8 +28,19 @@
     </div>
 
     <header>
-      <h1>Card Super Heroes</h1>
+      <div class="title">
+        <a href="#"><img src="./img/logo.png" alt="Logo tienda" class="logo"></a>
+        <h1>Nombre Tienda</h1>
+      </div>
+      <nav>
+          <ul>
+            <li><a href="./html/contact.html">Contacto</a></li>
+            <li><a href="./html/register.html">Registrarme</a></li>
+            <li><a href="./html/login.html">Ingresar</a></li> 
+          </ul>
+      </nav>
     </header>
+
 
     <main>
       <section>
@@ -37,7 +48,7 @@
           <div class="card-top card-batman">
             <i class="fas fa-heart"></i>
           </div>
-          <img src="img/batman.jpg" alt="Batman" />
+          <img src="img/batman.jpg" alt="Batman" class="character-img"/>
           <div class="text-card">
             <h2>Batman</h2>
             <p class="info-card">
@@ -58,7 +69,7 @@
           <div class="card-top card-wonder-woman">
             <i class="fas fa-heart"></i>
           </div>
-          <img src="img/ww.jpg" alt="Wonder Woman" />
+          <img src="img/ww.jpg" alt="Wonder Woman" class="character-img"/>
           <div class="text-card">
             <h2>Mujer maravilla</h2>
             <p class="info-card">
@@ -79,7 +90,7 @@
           <div class="card-top card-superman">
             <i class="fas fa-heart"></i>
           </div>
-          <img src="img/sman.jpg" alt="Superman"/>
+          <img src="img/sman.jpg" alt="Superman" class="character-img"/>
           <div class="text-card">
             <h2>Superman</h2>
             <p class="info-card">
@@ -104,50 +115,45 @@
           <div class="container">
             <form action="/registro" method="POST">
               <div class="content">
-                <label for="nombre">Nombre de le superhéroe:</label>
                 <input
                   type="text"
                   name="nombre"
                   id="nombre"
-                  placeholder="Ej: Linterna Verde"
-                  oninvalid="setCustomValidty(nombre)"
+                  placeholder=" Nombre del superheroe"
+                  oninvalid="setCustomValidty('nombre')"
                   required
                 />
               </div>
 
               <div class="content">
-                <label for="imagen">Link de la imágen del superheroe:</label>
                 <input
                   type="text"
                   name="imagen"
                   id="imagen"
-                  placeholder="Ej: https://shortest.link/dHI"
-                  oninvalid="setCustomValidty(imagen)"
+                  placeholder=" Link de la imágen del superheroe"
+                  oninvalid="setCustomValidty('imagen')"
                   required
                 />
               </div>
 
               <div class="content">
-                <label for="imagen-fondo">Link de la imagen para el fondo:</label>
                 <input
                   type="text"
                   name="imagen-fondo"
                   id="imagen-fondo"
-                  placeholder="Ej: https://shortest.link/dHQ"
-                  oninvalid="setCustomValidty(imagen-fondo)"
+                  placeholder=" Link de la imagen para el fondo"
+                  oninvalid="setCustomValidty('imagen-fondo')"
                   required
                 />
               </div>
 
               <div class="content">
-                <label for="descripcion">Descripcion:</label>
                 <textarea
                   type="descripcion"
                   name="descripcion"
                   id="descripcion"
-                  placeholder="Hal Jordan es el primer humano en unirse a 
-                              Los Linternas Verdes..."
-                  oninvalid="setCustomValidty(descripcion)"
+                  placeholder=" Descripcion"
+                  oninvalid="setCustomValidty('descripcion')"
                   required>
                 </textarea>
               </div>
@@ -155,13 +161,13 @@
               <div class="content">
                 <input
                   type="sumbit"
-                  class="button input-btn"
+                  class="input-btn"
                   onclick="setHidden('window-notice')"
                   value="Enviar"
                 />
                 <input
                   type="reset"
-                  class="button input-btn"
+                  class="input-btn"
                   onclick="setHidden('window-notice')"
                   value="Cancelar"
                 />

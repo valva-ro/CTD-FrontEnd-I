@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+.form {
+    margin-top: 40px;
+    width: 620px;
+}
+
+.form-btn {
+    font-size: 24px;
+    font-family: Karla;
+    font-weight: bold;
+    border-radius: 23px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.conteiner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-btn {
+    color: black;
+    background-color: #1CD1B0;
+}
+
+.input-btn:hover {
+    background-color: #16bb9d;
+}
+
+.reset-btn {
+    color: white;
+    background-color: #888888;
+}
+
+.reset-btn:hover {
+    background-color: #696969;
+}
+
+.left-btn {
+    margin-right: 10px;
+}
+
+.right-btn {
+    margin-left: 10px;
+}
+
+.form h1 {
+    color: #333333;
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 72px;
+}
+
+.form p {
+    text-align: center;
+    padding: 20px;
+}
+
+.form p a {
+    color: #1CD1B0;
+    text-decoration: none;
+}
+
+.form p a:hover {
+    color: #16bb9d;
+}
+
+input, textarea, select {
+    font-size: 20px;
+    border: solid black 1.5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}

@@ -1,12 +1,7 @@
-label {
-    display: block;
-    margin-bottom: 6px;
-    width: fit-content;
-}
-
 input, textarea {
     font-size: 24px;
     width: 100%;
+    padding: 10px;
 }
 
 input.button, button.button { 
@@ -62,8 +57,19 @@ textarea {
 
 .input-btn {
     width: 160px;
+    position: static;
+    background-color: var(--primary-color);
+    color: var(--card-background-color);
+    border-radius: 7px;
+    border: 0;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 25px;
+    padding: 15px 36px;
 }
 
 .input-btn:hover {
     cursor: pointer;
+    background-color: var(--primary-color-lighter);
 }
