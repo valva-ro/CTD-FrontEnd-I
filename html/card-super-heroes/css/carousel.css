@@ -1,8 +1,15 @@
-.horizontal-scrolling-wraper {
-  margin: 20px 100px;
+.flex-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontal-scrolling-wraper {
   overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 80px;
 }
 
 .horizontal-scrolling-wraper::-webkit-scrollbar {
