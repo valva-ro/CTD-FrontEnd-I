@@ -134,7 +134,7 @@
         </a>
         <div class="window-notice" id="window-notice">
           <div class="container">
-            <form action="/registro" method="POST">
+            <form action="/registro" method="POST" onsubmit="setHidden('window-notice')">
               <div class="content">
                 <input
                   type="text"
@@ -147,22 +147,24 @@
               </div>
 
               <div class="content">
+                <label for="imagen">Imágen del superheroe</label>
                 <input
-                  type="text"
+                  type="file"
                   name="imagen"
                   id="imagen"
-                  placeholder=" Link de la imágen del superheroe"
+                  accept=".jpg"
                   oninvalid="setCustomValidty('imagen')"
                   required
                 />
               </div>
 
               <div class="content">
+                <label for="imagen-fondo">Imágen de fondo</label>
                 <input
-                  type="text"
+                  type="file"
                   name="imagen-fondo"
                   id="imagen-fondo"
-                  placeholder=" Link de la imagen para el fondo"
+                  accept=".jpg"
                   oninvalid="setCustomValidty('imagen-fondo')"
                   required
                 />
@@ -173,24 +175,23 @@
                   type="descripcion"
                   name="descripcion"
                   id="descripcion"
-                  placeholder=" Descripcion"
+                  placeholder="Descripción de le superheroe"
                   oninvalid="setCustomValidty('descripcion')"
-                  required>
-                </textarea>
+                  required></textarea>
               </div>
 
               <div class="content">
-                <input
-                  type="sumbit"
-                  class="input-btn"
-                  onclick="setHidden('window-notice')"
-                  value="Enviar"
-                />
                 <input
                   type="reset"
                   class="input-btn"
                   onclick="setHidden('window-notice')"
                   value="Cancelar"
+                />
+
+                <input
+                  type="submit"
+                  class="input-btn"
+                  value="Enviar"
                 />
               </div>
             </form>

@@ -7,7 +7,6 @@
     align-items: center;
 }
 
-
 .form {
     margin-top: 40px;
     width: 620px;
@@ -28,21 +27,21 @@
     justify-content: center;
 }
 
-.input-btn {
+.form-container .input-btn {
     color: black;
     background-color: #1CD1B0;
 }
 
-.input-btn:hover {
+.form-container .input-btn:hover {
     background-color: #16bb9d;
 }
 
-.reset-btn {
+.form-container .reset-btn {
     color: white;
     background-color: #888888;
 }
 
-.reset-btn:hover {
+.form-container .reset-btn:hover {
     background-color: #696969;
 }
 
@@ -78,8 +77,12 @@
 
 input, textarea, select {
     font-size: 20px;
-    border: solid black 1.5px;
+    border: solid rgb(128, 127, 127) 1.5px;
     padding: 10px;
     margin: 10px 0;
     width: 100%;
+}
+
+input[type=file] {
+    border: 0;
 }
