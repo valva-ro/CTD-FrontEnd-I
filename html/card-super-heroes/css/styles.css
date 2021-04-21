@@ -6,6 +6,7 @@
 @import url('nav-bar.css');
 @import url('forms.css');
 @import url('carousel.css');
+@import url('harley-quinn.css');
 
 :root {
     --primary-color: #00669F;
@@ -29,7 +30,6 @@ footer {
     width: 100%;
     background-color: var(--primary-color);
     color: var(--background-color);
-    margin-top: 70px;
     padding: 25px;
 }
 

@@ -1,1 +1,74 @@
-/* TODO */
+.harley-quinn-bg {
+    background-image: url("./../img/bg-hquinn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.wide-card {
+    display: flex;
+    flex-direction: column;
+    width: 546px;
+    margin-top: 180px;
+    border-radius: 45px;
+    position: relative;
+}
+
+.wide-card h1 {
+    margin-top: 82px;
+    color: #2C0187;
+    font-size: 32px;
+    line-height: 37px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.wide-card img.heart {
+    position: absolute;
+    left: 30px;
+    top: 53px;
+}
+
+.wide-card-top {
+    background-color: var(--card-background-color);
+    border-radius: 45px 45px 0 0;
+}
+
+.wide-card-top img.character-img {
+    left: 209px;
+    top: -61px;
+}
+
+.wide-card-top p {
+    padding: 23px;
+}
+
+.wide-card-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wide-card-middle img {
+    margin: 15px 16.5px 30px;
+}
+
+.wide-card-bottom {
+    height: 87px;
+    background: #2C0187;
+    border-radius: 0 0 45px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wide-card-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
