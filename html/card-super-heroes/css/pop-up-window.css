@@ -1,22 +1,47 @@
-input, textarea {
+.window-notice input[type="text"], 
+.window-notice input[type="date"], 
+.window-notice input[type="file"], 
+.window-notice textarea, 
+.window-notice select {
+    border-radius: 15px;
+    border: 0;
     font-size: 24px;
-    width: 100%;
+    margin: 20px 0;
     padding: 10px;
+    width: 100%;
 }
 
-input.button, button.button { 
-    border: none; 
-    font-size: 16px;
-} 
+.window-notice input[type="file"] {
+    font-size: 18px;
+}
 
-textarea {
+.window-notice input[type="checkbox"],
+.window-notice input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 6px;
+}
+
+.window-notice form label {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    margin: 20px 10px 0 10px;
+}
+
+.window-notice form textarea {
+    height: 100%;
     resize: none;
 }
 
 .window-notice {
     background-color: rgba(0,0,0,.8);
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     left: 0;
+    padding: 50px;
     position: fixed;
     right: 0;
     top: 0;
@@ -24,52 +49,107 @@ textarea {
     z-index: 999;
 }
 
-.container {
-    background: var(--background-color);
-    border-radius: 10px;
-    box-shadow: 0 10px 7px rgba(0, 0, 0, 0.75);
-    margin: 2% auto;
-    padding: 16px;
+.window-notice h3 {
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.window-notice p {
+    font-family: Inter;
+    font-size: 20px;
+    padding: 10px;
+    font-style: normal;
+}
+
+.wrapper {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 95%;
+    overflow-y: auto;
+    padding: 40px 85px;
     position: relative;
-    text-align: left;
-    width: fit-content;
+    width: 85%;
 }
 
-.container p {
-    padding: 15px 0;
-    margin-bottom: 10px;
+.wrapper::-webkit-scrollbar {
+  width: 20px;
 }
 
-.container h2 {
-    padding: 5px;
+.wrapper::-webkit-scrollbar-thumb {
+  background: var(--primary-color-darker);
+  border-radius: 14px;
 }
 
-.container .content .button {
-    position: static;
+.close {
+    left: 4%;
+    position: absolute;
+    top: 8%;
 }
 
-.content {
-    color: var(--primary-color);
-    font-size: 26px;
-    padding: 16px 8px 4px 8px;
-    width: 450px;
+.close:hover {
+    cursor: pointer;
+}
+
+p.close {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p.close:hover {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex: 1;
+  margin: 20px;
 }
 
 .input-btn {
-    width: 160px;
-    position: static;
-    background-color: var(--primary-color);
-    color: var(--card-background-color);
-    border-radius: 7px;
+    background-color: var(--secondary-color);
+    border-radius: 23px;
     border: 0;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 44px;
     margin: 0 25px;
     padding: 15px 36px;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
 }
 
 .input-btn:hover {
+    background-color: var(--primary-color-darker);
     cursor: pointer;
-    background-color: var(--primary-color-lighter);
+}
+
+.block {
+    display: block;
+}
+
+.divisor-line {
+    border: 1px solid white;
+    margin: 30px 0;
 }

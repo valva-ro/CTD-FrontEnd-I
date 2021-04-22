@@ -75,7 +75,9 @@
     font-size: 20px;
 }
 
-input, textarea, select {
+.form-container input, 
+.form-container textarea, 
+.form-container select {
     font-size: 20px;
     border: solid rgb(128, 127, 127) 1.5px;
     padding: 10px;
@@ -83,6 +85,6 @@ input, textarea, select {
     width: 100%;
 }
 
-input[type=file] {
+.form-container input[type=file] {
     border: 0;
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Avanzado</title>
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="login">
+            <h3>Login</h3>
+
+            <form action="#">
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre y apellido (Obligatorio)</label>
+                    <input type="text" 
+                           name="nombre" 
+                           id="nombre" 
+                           placeholder="Juan Pérez" 
+                           minlength="5"
+                           maxlength="25"
+                           required> 
+                    
+                    <label for="tel">Tel</label>
+                    <input type="tel"
+                           name="tel" 
+                           id="tel" 
+                           placeholder="123-90122" 
+                           pattern="[0-9]{3}-[0-9]{5}"
+                           required> 
+
+                    <p>Tipo de Documento</p>
+                    
+                    <label for="dni" class="vertical">
+                        <input type="radio" 
+                               name="documento" 
+                               id="dni" 
+                               value="DNI">
+                        DNI
+                    </label>
+                    <label for="cuil" class="vertical">
+                        <input type="radio" 
+                               name="documento" 
+                               id="cuil" 
+                               value="CUIL">
+                        CUIL
+                    </label>
+                    <label for="cuit" class="vertical">
+                        <input type="radio" 
+                               name="documento" 
+                               id="cuit" 
+                               value="CUIT">
+                        CUIT
+                    </label>
+
+                    <label for="img-doc">Imagen documento</label>
+                    <input type="file" 
+                           name="img-doc" 
+                           id="img-doc" 
+                           accept=".jpg, .pdf, .png">
+
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" 
+                           name="nacimiento" 
+                           id="nacimiento" 
+                           min="2018-01-01" 
+                           max="2018-12-31">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lenguajes</legend>
+                    
+                    <p>Seleccione los lenguajes que conoce</p>
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="css" id="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="js">JS</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Trabajo</legend>
+                    <label for="">Seleccione una modalidad de trabajo:</label>
+
+                    
+                </fieldset>
+
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos">Acepto los términos.</label>
+
+                <input type="submit" value="">
+                <input type="reset" value="">
+            </form>
+
+        </div>
+    </main>
+    
+</body>
+</html>
