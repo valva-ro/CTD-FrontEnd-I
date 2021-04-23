@@ -5,11 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 100px;
 }
 
 .form {
     margin-top: 40px;
-    width: 620px;
+    width: 40%;
 }
 
 .form-btn {
@@ -30,27 +31,23 @@
 .form-container .input-btn {
     color: black;
     background-color: #1CD1B0;
+    border: none;
 }
 
 .form-container .input-btn:hover {
     background-color: #16bb9d;
+    transition: all 1s;
 }
 
 .form-container .reset-btn {
     color: white;
     background-color: #888888;
+    border: none;
 }
 
 .form-container .reset-btn:hover {
     background-color: #696969;
-}
-
-.left-btn {
-    margin-right: 10px;
-}
-
-.right-btn {
-    margin-left: 10px;
+    transition: all 1s;
 }
 
 .form h1 {
@@ -73,13 +70,11 @@
 
 .form-container p {
     font-size: 20px;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="tel"], 
-.form-container input[type="password"],
+.form-container input,
 .form-container textarea, 
 .form-container select {
     font-size: 20px;
@@ -91,16 +86,22 @@
     outline: none;
 }
 
-.form-container input[type="text"]:focus,
-.form-container input[type="email"]:focus,
-.form-container input[type="tel"]:focus, 
-.form-container input[type="password"]:focus,
+.form-container input:focus,
 .form-container textarea:focus, 
 .form-container select:focus {
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid var(--primary-color-darker);
+    background-color: var(--secondary-color-lighter);
+    color: var(--primary-color-darker);
 }
 
-.form-container input[type=file] {
+.form-container input[type="file"] {
     border: 0;
+}
+
+.form-container input.left-btn {
+    margin-right: 10px;
+}
+
+.form-container input.right-btn {
+    margin-left: 10px;
 }

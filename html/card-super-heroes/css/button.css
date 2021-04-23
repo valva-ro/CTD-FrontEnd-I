@@ -11,8 +11,9 @@
     text-align: center;
     text-decoration: none;
     width: 128px;
+    transition: all 1s;
 }
 
 .button:hover {
-    background-color: var(--primary-color-lighter);
+    background-color: var(--primary-color-darker);
 }

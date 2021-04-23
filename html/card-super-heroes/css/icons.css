@@ -19,5 +19,7 @@
 }
 
 .fa-plus:hover {
-    background-color: var(--primary-color-lighter);
+    background-color: var(--primary-color-darker);
+    transition: all 1s;
+    transform: scale(1.1);
 }

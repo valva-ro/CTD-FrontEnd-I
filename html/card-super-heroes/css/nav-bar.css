@@ -24,6 +24,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--primary-color-lighter);
+    color: var(--secondary-color);
     text-decoration: none;
+    transition: all 1s;
 }

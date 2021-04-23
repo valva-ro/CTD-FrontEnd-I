@@ -24,6 +24,11 @@ h2 {
     display: inline-block;
 }
 
+.card:hover {
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
 .card-top {
     background-repeat: no-repeat;
     border-radius: 25px 25px 0 0;

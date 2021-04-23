@@ -1,6 +1,4 @@
-.window-notice input[type="text"], 
-.window-notice input[type="date"], 
-.window-notice input[type="file"], 
+.window-notice input, 
 .window-notice textarea, 
 .window-notice select {
     border-radius: 15px;
@@ -8,22 +6,29 @@
     font-size: 24px;
     margin: 20px 0;
     padding: 10px;
-    width: 100%;
 }
 
-.window-notice input[type="text"]:focus, 
-.window-notice input[type="date"]:focus, 
-.window-notice input[type="file"]:focus, 
+.window-notice input[type="date"] {
+    padding: 22px 10px;
+}
+
+.window-notice input:focus, 
 .window-notice textarea:focus, 
 .window-notice select:focus {
+    background-color: var(--primary-color-darker);
     border: solid 4px var(--secondary-color);
     color: var(--secondary-color);
     outline: none;
 }
 
+.window-notice input[type="checkbox"]:checked~label,
+.window-notice input[type="radio"]:checked {
+    color: red;
+}
+
 .required::after {
-    content: "*";
     color: rgb(255, 94, 0);
+    content: "*";
     padding: 4px;
 }
 
@@ -33,8 +38,8 @@
 
 .window-notice input[type="checkbox"],
 .window-notice input[type="radio"] {
-    transform: scale(1.5);
     margin-right: 6px;
+    transform: scale(1.75);
 }
 
 .window-notice form label {
@@ -121,6 +126,7 @@ p.close:hover {
     color: var(--secondary-color);
     font-size: 32px;
     font-weight: bold;
+    transition: all 1s;
 }
 
 .row {
@@ -158,7 +164,9 @@ p.close:hover {
 
 .input-btn:hover {
     background-color: var(--primary-color-darker);
+    color: var(--secondary-color);
     cursor: pointer;
+    transition: all 1s;
 }
 
 .block {
