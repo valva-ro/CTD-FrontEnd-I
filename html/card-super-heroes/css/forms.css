@@ -94,10 +94,6 @@
     color: var(--primary-color-darker);
 }
 
-.form-container input[type="file"] {
-    border: 0;
-}
-
 .form-container input.left-btn {
     margin-right: 10px;
 }
