@@ -134,21 +134,21 @@
           <form action="/registro" method="POST" onsubmit="setHidden('window-notice')">
             <div class="row">
               <div class="column">
-                <label for="nombre">*Nombre</label>
+                <label for="nombre" class="required">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Linterna Verde"
-                  oninvalid="setCustomValidty('nombre')" required />
+                  oninvalid="setCustomValidty('nombre')" required tabindex="1"/>
 
                 <label for="fecha">Fecha</label>
-                <input type="date" name="fecha" id="fecha">
+                <input type="date" name="fecha" id="fecha" tabindex="3">
 
                 <textarea type="descripcion" name="descripcion" id="descripcion"
                   placeholder="Descripción de le superheroe" oninvalid="setCustomValidty('descripcion')"
-                  required></textarea>
+                  required tabindex="5" class="required"></textarea>
               </div>
 
               <div class="column">
-                <label for="especie">*Especie</label>
-                <select name="especie">
+                <label for="especie" class="required">Especie</label>
+                <select name="especie" required tabindex="2">
                   <option value="" selected hidden>Especie</option>
                   <option value="">Especie 1</option>
                   <option value="">Especie 3</option>
@@ -156,26 +156,26 @@
                   <option value="">Especie 5</option>
                 </select>
 
-                <label for="imagen">Agregar Foto</label>
+                <label for="imagen" class="required">Agregar Foto</label>
                 <input type="file" name="imagen" id="imagen" accept=".jpg, .jpeg, .png, .svg"
-                  oninvalid="setCustomValidty('imagen')" required />
+                  oninvalid="setCustomValidty('imagen')" required tabindex="4"/>
 
                 <p>Poderes</p>
                 
                 <label for="volar" class="block">
-                  <input type="checkbox" name="poderes" id="volar" value="volar">
+                  <input type="checkbox" name="poderes" id="volar" value="volar" tabindex="6">
                   Volar
                 </label>
                 <label for="imasuperInteligenciagen" class="block">
-                  <input type="checkbox" name="poderes" id="superInteligencia" value="superInteligencia">
+                  <input type="checkbox" name="poderes" id="superInteligencia" value="superInteligencia" tabindex="7">
                   SuperInteligencia
                 </label>
                 <label for="rayo-laser" class="block">
-                  <input type="checkbox" name="poderes" id="rayo-laser" value="rayo-laser">
+                  <input type="checkbox" name="poderes" id="rayo-laser" value="rayo-laser" tabindex="8">
                   Vista de rayo láser
                 </label>
                 <label for="billetera-gorda" class="block">
-                  <input type="checkbox" name="poderes" id="billetera-gorda" value="billetera-gorda">
+                  <input type="checkbox" name="poderes" id="billetera-gorda" value="billetera-gorda" tabindex="9">
                   Billetera gorda
                 </label>
 
@@ -183,16 +183,16 @@
 
                 <p>Tipo de personaje</p>
                 <label for="heroe" class="block">
-                  <input type="radio" name="tipo-personaje" id="heroe" value="heroe">
+                  <input type="radio" name="tipo-personaje" id="heroe" value="heroe" tabindex="10">
                   Héroe / Heroina
                 </label>
                 <label for="villane" class="block">
-                  <input type="radio" name="tipo-personaje" id="villane" value="villane">
+                  <input type="radio" name="tipo-personaje" id="villane" value="villane" tabindex="11">
                   Villano / Villana
-                </label>
+                </label>  
               </div>
               <div class="row">
-                <input type="submit" class="input-btn" value="Añadir" />
+                <input type="submit" class="input-btn" value="Añadir" tabindex="12"/>
               </div>
             </div>
           </form>

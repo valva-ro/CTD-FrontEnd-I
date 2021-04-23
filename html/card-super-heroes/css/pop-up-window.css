@@ -11,6 +11,22 @@
     width: 100%;
 }
 
+.window-notice input[type="text"]:focus, 
+.window-notice input[type="date"]:focus, 
+.window-notice input[type="file"]:focus, 
+.window-notice textarea:focus, 
+.window-notice select:focus {
+    border: solid 4px var(--secondary-color);
+    color: var(--secondary-color);
+    outline: none;
+}
+
+.required::after {
+    content: "*";
+    color: rgb(255, 94, 0);
+    padding: 4px;
+}
+
 .window-notice input[type="file"] {
     font-size: 18px;
 }
