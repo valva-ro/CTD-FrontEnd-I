@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --primary: #222222;
+    --secondary: #D01418;
+    --tertiary: #F3F3F3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px 35px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div h1 {
+    margin-left: 20px;
+    color: var(--tertiary);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+header div h1>span.red-text {
+    font-weight: 400;
+}
+
+header nav>ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav>ul>li> {
+    text-decoration: none;
+}
+
+header nav>ul>li>a {
+    color: var(--tertiary);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cart {
+    font-size: 24px;
+    margin-left: 46px;
+}
+
+.hero {
+    background-image: url("../img/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: var(--tertiary);
+    font-size: 40px;
+    text-align: center;
+}
+
+section {
+    background-color: var(--tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+section h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+section h5 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+section h6 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #619D00;
+}
+
+.container-cards, .container-banner {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.card {
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: center;
+    padding: 25px 50px;
+    border-bottom: solid 0.2px #8f8f8f;
+}
+
+.card-bottom {
+    padding: 21px;
+}
+
+.container-banner {
+    margin: 20px 0 85px;
+}
+
+.banner {
+    width: 45%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner a {
+    color: var(--tertiary);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 18px;
+}
+
+.sillas {
+    background-image: url("../img/banner-sillas.svg");   
+}
+
+.computadoras {
+    background-image: url("../img/banner-pcs.svg");   
+}
+
+.button {
+    color: var(--tertiary);
+    width: 220px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 16px 61px;
+    margin: 30px;
+}
+
+.red-text {
+    color: var(--secondary);
+}
+
+.red-bg {
+    background-color: var(--secondary);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-top {
+    font-size: 25px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-top .footer-top-start {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-top .footer-top-start h4 {
+    font-weight: 700;
+    margin: 20px;
+}
+
+footer .footer-top .footer-top-end h4 {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+footer .footer-top .footer-top-end ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-bottom {
+    background-color: var(--tertiary);
+    color: #000;
+    padding: 7px;
+    text-align: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    color: var(--tertiary);
+    font-size: 27px;
+  }
+  .container-cards {
+      flex-direction: column;
+  }
+  .container-banner {
+      flex-direction: column;
+      width: 80vw;
+  }
+  .container-banner .banner { 
+      width: 100%;
+      margin: 10px 0;
+  }
+  .footer-top {
+      flex-direction: column;
+  }
+}
