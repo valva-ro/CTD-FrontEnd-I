@@ -141,14 +141,14 @@
                 <label for="fecha">Fecha</label>
                 <input type="date" name="fecha" id="fecha" tabindex="3">
 
-                <textarea type="descripcion" name="descripcion" id="descripcion"
+                <textarea name="descripcion" id="descripcion"
                   placeholder="Descripción de le superheroe" oninvalid="setCustomValidty('descripcion')"
                   required tabindex="5" class="required"></textarea>
               </div>
 
               <div class="column">
                 <label for="especie" class="required">Especie</label>
-                <select name="especie" required tabindex="2">
+                <select id="especie" name="especie" required tabindex="2">
                   <option value="" selected hidden>Especie</option>
                   <option value="">Especie 1</option>
                   <option value="">Especie 3</option>
@@ -169,7 +169,7 @@
                 
                 <div class="block">
                   <input type="checkbox" name="poderes" id="superInteligencia" value="superInteligencia" tabindex="7">
-                <label for="imasuperInteligenciagen" class="block">SuperInteligencia</label>
+                <label for="superInteligencia" class="block">SuperInteligencia</label>
                 </div>
                 
                 <div class="block">
