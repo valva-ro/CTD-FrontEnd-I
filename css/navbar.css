@@ -1,0 +1,91 @@
+header {
+    background-color: var(--primary);
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 5px 20px black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Alineo logo con titulo */
+header a {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--accent);
+}
+
+header a img {
+    width: 80px;
+    padding: 1vw;
+}
+
+/* Escondo el span que dice FE1, se hara visible en dispositivos moviles */
+.not-full {
+    display: none;
+}
+
+/* Le saco los dots a las ul dentro del nav */
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul:last-child {
+    margin-right: 3vw;
+}
+
+/* Le doy un tamaño y color a los links del nav */
+header nav ul li a {
+    color: var(--secondary);
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+/* Inicialmente oculto lo que va a ser el drop down */
+header nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+/* A cada item de la lista hija le asigno display flex */
+header nav ul li ul li {
+    display: flex;
+} 
+
+/* A cada anchor del item de la lista hija le asigno width 100% */
+header nav ul li ul li a {
+    width: 100%;
+} 
+
+/* Cuando el mouse esta sobre un item de la lista,
+muestro el drop down */
+header nav ul li a:hover + .hidden, .hidden:hover {
+    display: flex;
+    flex-direction: column;
+} 
+
+header nav ul li:hover a {
+    background: var(--background);
+    color: var(--accent);
+}
+
+/* Cuando el mouse este sobre un item de la lista muestro
+la drop down con fondo negro */
+header nav ul li:hover ul li a {
+    background: var(--background);
+    color: var(--primary);
+}
+
+/* Cuando el mouse este sobre un item de la lista muestro
+y sobre uno de sus items le cambio el color */
+header nav ul li:hover ul li a:hover {
+    color: var(--accent);
+}
