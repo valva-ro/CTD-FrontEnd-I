@@ -27,10 +27,13 @@ header, footer {
   align-items: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header nav ul {
   display: flex;
   gap: 3px;
-  list-style-type: none;
 }
 
 header nav ul li, footer ul li {
@@ -112,6 +115,7 @@ main section .podio h3 {
 .top5 {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .top5 .podio__pizzas ol {
@@ -121,10 +125,6 @@ main section .podio h3 {
 
 .top5 .podio__pizzas ol li {
   padding: 10px 0;
-}
-
-.top5 .podio__img {
-  padding-bottom: 60px;
 }
 
 footer {
@@ -140,6 +140,24 @@ footer .footer__logo {
 
 footer ul {
   color: var(--lightWhite);
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul li:nth-child(1) {
+  order: 0;
+}
+
+footer ul li:nth-child(2) {
+  order: 2;
+}
+
+footer ul li:nth-child(3) {
+  order: 3;
+}
+
+footer ul li:nth-child(4) {
+  order: 1;
 }
 
 .menu {
