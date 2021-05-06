@@ -182,7 +182,7 @@ footer ul {
     right: 0;
 }
 
-/*** Responsive */
+/*** Responsive ***/
 @media screen and (max-width: 768px) {
     body {
         font-size: 1.5rem;
