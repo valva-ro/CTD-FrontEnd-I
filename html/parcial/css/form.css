@@ -1,0 +1,60 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form input {
+  background-color: var(--secondary);
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+form input:focus {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+form div.conteiner-btn {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  padding: 40px;
+  gap: 30px;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 8px 24px;
+  font-weight: bold;
+  transition: all 1s;
+}
+
+form input[type="reset"] {
+  background-color: #8a8787;
+}
+
+form input[type="reset"]:hover {
+  background-color: #4d4c4c;
+  color: var(--primary);
+}
+
+form input[type="submit"] {
+  background-color: var(--primary);
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}

@@ -1,0 +1,73 @@
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 48px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header div a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header div h1 {
+  font-size: 20px;
+}
+
+header div h1 span {
+  color: var(--secondary);
+}
+
+header div ul {
+  display: flex;
+  gap: 3px;
+}
+
+header ul li a {
+  color: white;
+  padding: 5px;
+  transition: all 1s;
+}
+
+header ul li a:hover {
+  color: var(--secondary);
+}
+
+.menu {
+  display: none;
+}
+
+.before-header {
+  background-color: var(--tertiary);
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.before-header div {
+  display: flex;
+}
+
+.before-header div select {
+  background-color: var(--tertiary);
+  color: white;
+  padding: 6px;
+  border: none;
+}
+
+.oferta {
+  padding: 4px 30px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat & Dog</title>
+    <link rel="icon" href="./img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="before-header">
+      <p class="oferta">Grandes ofertas en comederos</p>
+      <div>
+          <select name="pais">
+            <option value="" selected hidden>Español</option>
+            <option value="Ingles">Ingés</option>
+            <option value="Español">Español</option>
+            <option value="Aleman">Alemán</option>
+            <option value="Frances">Francés</option>
+          </select>   
+          <select name="moneda">
+            <option value="" selected hidden>ARG$</option>
+            <option value="arg">ARG$</option>
+            <option value="usd">USD</option>
+          </select>   
+      </div>
+    </div>
+
+    <header>
+      <div class="header-logo">
+        <a href="#">
+          <img src="img/cat.png" alt="Gato" />
+          <h1><span>Front</span>Cat&Dog</h1>
+          <img src="img/dog.png" alt="Perro" />
+        </a>
+      </div>
+
+
+      <div>
+          <i class="fas fa-bars menu"></i>
+          <nav>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-paw"></i>
+                    Categorías
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-paw"></i>
+                    Pets
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-paw"></i>
+                    Sobre nosotros
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Contáctanos
+                  </a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+
+      <div class="cart-user">
+          <ul>
+              <li><a href=""><i class="fas fa-user"></i></a></li>
+              <li><a href=""><i class="fas fa-shopping-basket"></i></a></li>
+          </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+          <input
+            type="text"
+            name="nombre-apellido"
+            placeholder="Nombre y Apellido"
+            required
+            class="required"
+          />
+
+          <input
+            type="email"
+            name="mail"
+            placeholder="Ingresá tu correo electrónico"
+            required
+            class="required"
+          />
+
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Teléfono"
+            pattern="[0-9]{3}-[0-9]{5}"
+          />
+
+          <div class="conteiner-btn">
+            <input type="reset" class="btn" value="Resetear" />
+
+            <input type="submit" class="btn" value="Entrar" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-start">
+          <div class="icon">
+            <img src="./img/ubic.png" alt="Ubicación" />
+            <img src="./img/phone2.png" alt="Teléfono" />
+            <img src="./img/correo.png" alt="Correo electrónico" />
+          </div>
+          <dl> 
+            <dt>Localidad</dt>
+            <dd>Calle - provincia</dd>
+         
+            <dt>Teléfono</dt>
+            <dd>Número de tel</dd>
+ 
+            <dt>Correo electrónico</dt>
+            <dd>Dirección de correo</dd>
+          </dl>
+        </div>
+
+        <div class="footer-top-end">
+          <div class="footer-logo">
+            <img src="img/cat.png" alt="Gato" />
+            <p><span>Front</span>Cat&Dog</p>
+            <img src="img/dog.png" alt="Perro" />
+          </div>
+          <div class="social-media">
+            <ul>
+              <li>
+                <a href="#"><img src="img/Youtube.png" alt="Youtube" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/Instagram.png" alt="Instagram" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Todos los derechos reservados a Front End</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("./header.css");
+@import url("./form.css");
+@import url("./footer.css");
+
+:root {
+  --primary: #f0a83e;
+  --secondary: #3c2313;
+  --tertiary: #222222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+h2 {
+  color: var(--secondary);
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    height: 60vh;
+  }
+
+  .menu {
+    display: flex;
+    color: white;
+    font-size: 28px;
+  }
+
+  header nav ul, header .cart-user {
+    display: none;
+  }
+
+  footer .footer-top {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-top .footer-top-end .social-media ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form input {
+    font-size: 14px;
+  }
+}
