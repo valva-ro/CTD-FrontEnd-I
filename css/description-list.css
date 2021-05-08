@@ -1,9 +1,12 @@
 dl dt a {
     color: var(--primary);
+    transition: all .5s ease-in-out;
 }
 
 dl dt a:hover {
-    color: #452e97;
+    color: #a495e2;
+    padding-left: 4%;
+    transform: scale(1.1);
 }
 
 dl dt {

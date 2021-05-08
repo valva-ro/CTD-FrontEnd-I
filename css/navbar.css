@@ -50,15 +50,12 @@ header nav ul li a {
 }
 
 /* Inicialmente oculto lo que va a ser el drop down */
-header nav ul li ul {
-    display: none;
+header nav ul li ul.hidden {
     position: absolute;
+    display: none;
+    opacity: 1;
+    animation: fadeInOpacity 1.25s;
 }
-
-/* A cada item de la lista hija le asigno display flex */
-header nav ul li ul li {
-    display: flex;
-} 
 
 /* A cada anchor del item de la lista hija le asigno width 100% */
 header nav ul li ul li a {
@@ -87,5 +84,16 @@ header nav ul li:hover ul li a {
 /* Cuando el mouse este sobre un item de la lista muestro
 y sobre uno de sus items le cambio el color */
 header nav ul li:hover ul li a:hover {
-    color: var(--accent);
+    background: var(--primary);
+    color: var(--secondary);
+    padding-left: 15%;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
