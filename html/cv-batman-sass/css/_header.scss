@@ -1,0 +1,17 @@
+/* header */
+header {
+    background-color: $light-gray;
+    @include flex(center, center, column);
+    h1 {
+        background-color: $gray;
+        color: $dark-blue;
+        font-family: Colibri;
+        font-size: 26px;
+        letter-spacing: 12px;
+        padding: 0.75%;
+        text-align: center;
+        text-transform: uppercase;
+        word-spacing: 50px;
+        @include enlarge-font-size(480px, 2rem);
+    }
+}

@@ -1,0 +1,18 @@
+footer {
+    background-color: $dark-blue;
+    p {
+        @extend .mayusculas;
+        @include flex(center, center);
+        color: white;
+        font-size: 24px;
+
+        a {
+            @include flex(center, center);
+            img {
+                height: 20px;
+                width: 20px;
+                margin: 5px;
+            }
+        }
+    }
+}

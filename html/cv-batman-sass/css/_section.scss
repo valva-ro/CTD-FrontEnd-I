@@ -1,0 +1,35 @@
+/* section */
+section {
+
+    @include flex(center, flex-start, column);
+    width: 50vw;
+
+    &.mayusculas, .mayusculas {
+        text-transform: uppercase;
+    }
+
+    h2 {
+        @extend .mayusculas;
+        @include enlarge-font-size(480px, 1.5rem);
+        background-color: $gray;
+        font-family: Colibri;
+        letter-spacing: 6px;
+        font-size: 18px;
+        color: $dark-red;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width:  768px) {
+        width: 75vw;
+    }
+}
