@@ -12,6 +12,7 @@ header {
         text-align: center;
         text-transform: uppercase;
         word-spacing: 50px;
+        width: 100%;
         @include enlarge-font-size(480px, 2rem);
     }
 }

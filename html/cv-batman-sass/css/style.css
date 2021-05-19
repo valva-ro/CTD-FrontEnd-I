@@ -59,6 +59,7 @@ header h1 {
   text-align: center;
   text-transform: uppercase;
   word-spacing: 50px;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
