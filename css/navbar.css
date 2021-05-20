@@ -49,6 +49,10 @@ header nav ul li a {
     padding: 10px;
 }
 
+header nav>ul:first-child>li>a {
+    border-radius: 10px 10px 0 0;
+}
+
 /* Inicialmente oculto lo que va a ser el drop down */
 header nav ul li ul.hidden {
     position: absolute;
@@ -70,14 +74,14 @@ header nav ul li a:hover + .hidden, .hidden:hover {
 } 
 
 header nav ul li:hover a {
-    background: var(--background);
+    background: var(--secondary);
     color: var(--accent);
 }
 
 /* Cuando el mouse este sobre un item de la lista muestro
-la drop down con fondo negro */
+la drop down con fondo gris oscuro */
 header nav ul li:hover ul li a {
-    background: var(--background);
+    background: var(--secondary);
     color: var(--primary);
 }
 
@@ -87,6 +91,22 @@ header nav ul li:hover ul li a:hover {
     background: var(--primary);
     color: var(--secondary);
     padding-left: 15%;
+}
+
+header a#hamburger {
+    display: none;
+    transition: all .65s;
+    font-size: 30px;
+    padding: 10px;
+}
+
+header a#hamburger:hover {
+    color: white;
+}
+
+header a#hamburger.active {
+    transform: rotate(-90deg);
+    color: white;
 }
 
 @keyframes fadeInOpacity {

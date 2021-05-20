@@ -71,6 +71,41 @@ footer p {
     dl dd {
         margin-left: 15%;
     }
+
+    section div.fila {
+        width: 80vw;
+    }
+
+    header nav ul#menu {
+        position: fixed;
+        left: 0;
+        top: -100%;
+        flex-direction: column;
+        background-color: var(--primary);
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        transition: 0.3s;
+    }
+
+    header nav ul#menu li a:hover {
+        color: var(--primary);
+    }
+    
+    header nav ul#menu>li>ul>li>a {
+        color: var(--accent);
+    }
+    
+    header nav ul#menu>li>ul>li>a:hover {
+        color: var(--secondary);
+    }
+
+    header a#hamburger {
+        display: inline-block;
+    }
+
+    header nav ul#menu.active {
+        top: 100px;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -82,14 +117,6 @@ footer p {
         width: 20%;
     }
 
-    .full {
-        display: none;
-    }
-    
-    .not-full {
-        display: block;
-    }
-
     .hero div {
         width: 80vw;;
     }
@@ -98,6 +125,14 @@ footer p {
 @media screen and (max-width: 480px) {
     .hero h2 {
         font-size: 2rem;
+    }
+
+    .full {
+        display: none;
+    }
+    
+    .not-full {
+        display: block;
     }
 
     dl:last-child {
